@@ -1,0 +1,28 @@
+//header file inclusion
+#include<stdio.h> 
+
+//Function Declaration
+int Addition(int ,int);
+
+//main Function
+int main()
+{
+	int value1=0;
+	int value2=0;
+	int iret=0;
+	printf("Enter the first number\n");
+	scanf("%d",&value1);
+	printf("Enter the second number\n");
+	scanf("%d",&value2);
+	iret=Addition(value1,value2);
+	printf("Addition of two numbers is:%d\n",iret);
+	return 0;
+}//End Of main
+
+//Function Defination
+int Addition(int no1,int no2)
+{
+	int ans=0;
+	ans=no1+no2;
+	return ans;
+}
